@@ -15,7 +15,7 @@ import com.netflix.hollow.core.write.HollowObjectWriteRecord;
  *
  * <p><b>Trade-offs:</b>
  * <ul>
- *   <li>Not thread-safe—the internal pointer is mutable shared state</li>
+ *   <li>Not thread-safe - the internal pointer is mutable shared state</li>
  *   <li>Must read data sequentially; random access requires manual repositioning
  *       via {@link #resetTo(int)}</li>
  * </ul>
