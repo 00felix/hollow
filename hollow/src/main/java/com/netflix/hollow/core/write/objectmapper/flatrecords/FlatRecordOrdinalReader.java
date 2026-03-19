@@ -12,7 +12,7 @@ import com.netflix.hollow.core.write.HollowObjectWriteRecord;
  *
  * <p>This reader provides random access to any ordinal within the record. Thread safety
  * is achieved because all read operations require passing in the ordinal, and the byte
- * offset is recalculated on-the-fly within the scope of each method call—no mutable
+ * offset is recalculated on-the-fly within the scope of each method call - no mutable
  * cursor state is shared across threads.
  *
  * <p><b>Trade-offs:</b>

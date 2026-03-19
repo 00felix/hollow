@@ -3,7 +3,11 @@ apply plugin: 'java-library'
 dependencies {
     api project(':hollow')
 
-    implementation 'com.netflix.zeno:netflix-zeno:2.22.3'
+    implementation('com.netflix.zeno:netflix-zeno:2.22.3') {
+        exclude group: 'com.fasterxml.jackson.core', module: 'jackson-databind'
+        exclude group: 'com.fasterxml.jackson.core', module: 'jackson-core'
+        exclude group: 'com.fasterxml.jackson.core', module: 'jackson-annotations'
+    }
 
     testImplementation 'junit:junit:4.11'
 }
